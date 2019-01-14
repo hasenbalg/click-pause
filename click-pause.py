@@ -24,6 +24,6 @@ class StarterPlugin (GObject.Object, Peas.Activatable):
 
 
     def toggle_pause(self, widget, event):
-        if (event.button == 3 ):
+        if (event.button == 1 ):
             self._totem.play_pause()
             logging.info('Play' if self._totem.is_playing() else 'Pause')
